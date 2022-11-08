@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	argc = 0;
-	printf("Program's name is: %s\n", argv[argc]);
+	argc--; /* added to pass betty */
+	printf("Program's name is: %s\n", argv[0]);
 	return (0);
 }
