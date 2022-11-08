@@ -10,6 +10,6 @@ int main(int argc, char *argv[])
 {
 	argc = 0; /* added to pass betty */
 
-	printf("%s\n", argv[0]);
+	printf("%s\n", argv[argc]);
 	return (0);
 }
