@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	argc = 0; /* added to pass betty */
+	(void)argc;
 
-	printf("%s\n", argv[argc]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
