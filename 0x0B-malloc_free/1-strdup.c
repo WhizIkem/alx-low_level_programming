@@ -10,19 +10,19 @@
 char *_strdup(char *str)
 {
 	char *array;
-	int i, newstring;
+	int i, nstr;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (newstring = 0; newstring <= *str; newstring++)
+	for (nstr = 0; nstr <= *str; nstr++)
 	{
 	}
-	newstring += 1;
+	nstr += 1;
 
-	array = malloc(sizeof(char) * newstring);
+	array = malloc(sizeof(char) * nstr);
 
-	for (i = 0; i < newstring; i++)
+	for (i = 0; i < nstr; i++)
 		array[i] = str[i];
 
 	if (array == NULL)
