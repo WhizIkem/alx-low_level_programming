@@ -1,3 +1,4 @@
+#include <elf.h>
 #include "main.h"
 /**
   * placeholder2 - define function
