@@ -1,21 +1,34 @@
 #!/usr/bin/python3
-"""
-Island Perimeter
-"""
+""" Island perimeter """
+
 
 def island_perimeter(grid):
-    """function that returns the perimeter of the island described in grid"""
-    count = 0
-    for i in range(0, len(grid)):
-        for j in range(0, len(grid[i])):
-            count += 4
-            if i > 0 and grid[i - 1][j] == 1:
-                count -= 1
-            if i < len(grid) - and grid[i + 1][j] == 1:
-                count -= 1
-            if j > 0 and grid[i][j - 1] == 1:
-                count -= 1
-            if j < len(grid[i]) - 1 and grid[i][j + 1] == 1:
-                count -= 1
+    """ Island perimenter """
 
-    return count
+    count = 0
+
+    for x in range(len(grid)):
+        for y in range(len(grid[x]) - 1):
+
+            if grid[x][y]:
+                if (x - 1) < 0:
+                    count += 1
+                else:
+                    if grid[x - 1][y] == 0:
+                        count += 1
+                if (y - 1) < 0:
+                        count += 1
+                else:
+                    if grid[x][y - 1] == 0:
+                        count += 1
+                if (x + 1) >= len(grid) - 1:
+                    count += 1
+                else:
+                    if grid[x + 1][y] == 0:
+                        count += 1
+                if (y + 1) >= len(grid) - 1:
+                        count += 1
+                else:
+                    if grid[x][y + 1] == 0:
+                        count += 1
+    return (count)
