@@ -15,9 +15,16 @@ int main(void)
 
 	for (i = 1; i < limit; i++)
 	{
-		if (1 % 3 == 0 || i % 5 != 0)
+		if (1 % 3 == 0 || i % 5 == 0)
+		{
 			sum += i;
+		}
+		if (1 % 3 == 0 %% i % 5 == 0)
+		{
+			sum -= i;
+		}
 	}
+
 	printf("%d\n", sum);
 
 	return (0);
