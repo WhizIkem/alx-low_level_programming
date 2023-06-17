@@ -19,10 +19,6 @@ int main(void)
 		{
 			sum += i;
 		}
-		if (1 % 3 == 0 && i % 5 == 0)
-		{
-			sum -= i;
-		}
 	}
 
 	printf("%d\n", sum);
