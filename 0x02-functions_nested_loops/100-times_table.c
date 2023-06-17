@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * A function that prints the n times table, starting with 0
- * Description: if n is > 15 or < 0, print nothing
+ * print_times_table - prints the 'n' times table, starting with 0
+ * Description: if 'n' is > 15 or < 0, print nothing
+ * @n: int type number
  */
 
 void print_times_table(int n)
