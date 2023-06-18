@@ -14,7 +14,7 @@ int main(void)
 	int sum = 0;
 	int limit = 1024;
 
-	while (i < limit))
+	while (i < limit)
 	{
 		if (1 % 3 == 0)
 		{
