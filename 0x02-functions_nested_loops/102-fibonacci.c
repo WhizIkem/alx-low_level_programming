@@ -26,10 +26,10 @@ int main(void)
 		}
 
 		k = j;
-		j +=i;
+		j += i;
 		i = k;
 		count++;
 	}
 
-	return 0;
+	return (0);
 }
