@@ -26,7 +26,7 @@ int main(void)
 		}
 
 		k = j;
-		j +=ni;
+		j +=i;
 		i = k;
 		count++;
 	}
