@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - main block
@@ -13,12 +14,17 @@ int main(void)
 	int sum = 0;
 	int limit = 1024;
 
-	for (i = 1; i < limit; i++)
+	while (i < limit))
 	{
-		if (1 % 3 == 0 || i % 5 == 0)
+		if (1 % 3 == 0)
 		{
 			sum += i;
 		}
+		else if (i % 5 == 0)
+		{
+			sum += i;
+		}
+		i++;
 	}
 
 	printf("%d\n", sum);
